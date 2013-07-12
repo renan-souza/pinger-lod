@@ -1,0 +1,72 @@
+generateJson.pl: Fri Jun 14 12:34:13 2013=1371238453
+{
+	
+	ns1.restena.lu: {		
+			SourceName:"ns1.restena.lu",
+			SourceIP:"158.64.1.23",
+			SiteName:"restena.lu",
+			SourceNickName:"LU.RESTENA.N1",
+			SourceFullName:"Research and Education Network Luxembourg",
+			location:"Luxembourg City",
+			country:"Luxembourg",
+			continent:"Europe",
+			latitude:"49.75",
+			longitude:"6.167",
+			ProjectType:"NOT-SET",
+			PingServer:"NOT-SET",
+			TraceServer:"NOT-SET",
+			DataServer:"NOT-SET",
+			NodeURL:"",
+			NodeGMT:"",
+			group:"EUROPE ",			
+			AppUser:"",			
+			ContactInformation:"",
+			NodeComments:"Suggested by Mike Jensen <mikejensen@#eircom.net>, validated by cottrell, added by jaredg 10/09/07"
+		},
+
+	waib.gouv.bj: {		
+			SourceName:"waib.gouv.bj",
+			SourceIP:"81.91.232.2",
+			SiteName:"gouv.bj",
+			SourceNickName:"BJ.GOUV.N1",
+			SourceFullName:"Le Benin",
+			location:"Cotonou",
+			country:"Benin",
+			continent:"Africa",
+			latitude:"9.5",
+			longitude:"2.25",
+			ProjectType:"B",
+			PingServer:"NOT-SET",
+			TraceServer:"NOT-SET",
+			DataServer:"NOT-SET",
+			NodeURL:"http://www.gouv.bj",
+			NodeGMT:"",
+			group:"N.AFRICA SUB.SAHARA W.AFRICA ",			
+			AppUser:"",			
+			ContactInformation:"",
+			NodeComments:"added by jerrodw 7/6/06 Lat/ Lon corrected by Shahryar 1/11/06. AKA www.abp.gouv.bj."
+		},
+
+	desperado.utd.rochester.edu: {		
+			SourceName:"desperado.utd.rochester.edu",
+			SourceIP:"128.151.7.1",
+			SiteName:"rochester.edu",
+			SourceNickName:"ROCHESTER",
+			SourceFullName:"University of Rochester",
+			location:"Rochester, NY",
+			country:"United States",
+			continent:"North America",
+			latitude:"43.15",
+			longitude:"-77.60",
+			ProjectType:"Z",
+			PingServer:"NOT-SET",
+			TraceServer:"NOT-SET",
+			DataServer:"NOT-SET",
+			NodeURL:"",
+			NodeGMT:"",
+			group:"N.AMERICA ",			
+			AppUser:"maui.ccd.bnl.gov ping.bnl.gov ",			
+			ContactInformation:"",
+			NodeComments:""
+		}
+}
