@@ -1,0 +1,242 @@
+{
+  "MonitoringGroup1": [
+    "airuniversity.seecs.edu.pk"
+  ],
+  "MonitoringGroup2": [
+    "aup.seecs.edu.pk"
+  ],
+  "MonitoringGroup3": [
+    "brunsvigia.tenet.ac.za"
+  ],
+  "MonitoringGroup4": [
+    "buitms.seecs.edu.pk"
+  ],
+  "MonitoringGroup5": [
+    "cae.seecs.edu.pk"
+  ],
+  "MonitoringGroup6": [
+    "hepnrc.hep.net"
+  ],
+  "MonitoringGroup7": [
+    "hunnas.learn.ac.lk"
+  ],
+  "MonitoringGroup8": [
+    "icfamon.dl.ac.uk"
+  ],
+  "MonitoringGroup9": [
+    "kinnaird.seecs.edu.pk"
+  ],
+  "MonitoringGroup10": [
+    "maggie1.seecs.edu.pk"
+  ],
+  "MonitoringGroup11": [
+    "maggie2.seecs.edu.pk"
+  ],
+  "MonitoringGroup12": [
+    "monitor.seecs.edu.pk"
+  ],
+  "MonitoringGroup13": [
+    "multivac.sdsc.edu"
+  ],
+  "MonitoringGroup14": [
+    "netmon.physics.carleton.ca"
+  ],
+  "MonitoringGroup15": [
+    "npm.neduet.edu.pk"
+  ],
+  "MonitoringGroup16": [
+    "ns3.pieas.edu.pk"
+  ],
+  "MonitoringGroup17": [
+    "nuisb.seecs.edu.pk"
+  ],
+  "MonitoringGroup18": [
+    "nukhimain.seecs.edu.pk"
+  ],
+  "MonitoringGroup19": [
+    "ping.desy.de"
+  ],
+  "MonitoringGroup20": [
+    "ping.riken.jp"
+  ],
+  "MonitoringGroup21": [
+    "pinger-ncp.ncp.edu.pk"
+  ],
+  "MonitoringGroup22": [
+    "pinger.acmesecurity.org"
+  ],
+  "MonitoringGroup23": [
+    "pinger.aiou.edu.pk"
+  ],
+  "MonitoringGroup24": [
+    "pinger.arn.dz"
+  ],
+  "MonitoringGroup25": [
+    "pinger.ascr.doe.gov"
+  ],
+  "MonitoringGroup26": [
+    "pinger.cdac.in"
+  ],
+  "MonitoringGroup27": [
+    "pinger.cdacmumbai.in"
+  ],
+  "MonitoringGroup28": [
+    "pinger.cemb.edu.pk"
+  ],
+  "MonitoringGroup29": [
+    "pinger.cern.ch"
+  ],
+  "MonitoringGroup30": [
+    "pinger.comsats.edu.pk"
+  ],
+  "MonitoringGroup31": [
+    "pinger.cse.ust.hk"
+  ],
+  "MonitoringGroup32": [
+    "pinger.es.net"
+  ],
+  "MonitoringGroup33": [
+    "pinger.fsksm.utm.my"
+  ],
+  "MonitoringGroup34": [
+    "pinger.fsktm.um.edu.my"
+  ],
+  "MonitoringGroup35": [
+    "pinger.giki.edu.pk"
+  ],
+  "MonitoringGroup36": [
+    "pinger.iba-suk.edu.pk"
+  ],
+  "MonitoringGroup37": [
+    "pinger.ictp.it"
+  ],
+  "MonitoringGroup38": [
+    "pinger.isra.edu.pk"
+  ],
+  "MonitoringGroup39": [
+    "pinger.kohat.edu.pk"
+  ],
+  "MonitoringGroup40": [
+    "pinger.lcwu.edu.pk"
+  ],
+  "MonitoringGroup41": [
+    "pinger.lhr.nu.edu.pk"
+  ],
+  "MonitoringGroup42": [
+    "pinger.nca.edu.pk"
+  ],
+  "MonitoringGroup43": [
+    "pinger.nchc.org.tw"
+  ],
+  "MonitoringGroup44": [
+    "pinger.numl.edu.pk"
+  ],
+  "MonitoringGroup45": [
+    "pinger.nwfpuet.edu.pk"
+  ],
+  "MonitoringGroup46": [
+    "pinger.pern.edu.pk"
+  ],
+  "MonitoringGroup47": [
+    "pinger.sesame.org.jo"
+  ],
+  "MonitoringGroup48": [
+    "pinger.slac.stanford.edu"
+  ],
+  "MonitoringGroup49": [
+    "pinger.sprace.org.br"
+  ],
+  "MonitoringGroup50": [
+    "pinger.stanford.edu"
+  ],
+  "MonitoringGroup51": [
+    "pinger.uet.edu.pk"
+  ],
+  "MonitoringGroup52": [
+    "pinger.uettaxila.edu.pk"
+  ],
+  "MonitoringGroup53": [
+    "pinger.unesp.br"
+  ],
+  "MonitoringGroup54": [
+    "pinger.unimas.my"
+  ],
+  "MonitoringGroup55": [
+    "pinger.uob.edu.pk"
+  ],
+  "MonitoringGroup56": [
+    "pinger.usindh.edu.pk"
+  ],
+  "MonitoringGroup57": [
+    "pinger.vu.edu.pk"
+  ],
+  "MonitoringGroup58": [
+    "pingerfsbd.pern.edu.pk"
+  ],
+  "MonitoringGroup59": [
+    "pingerisl-air.pern.edu.pk"
+  ],
+  "MonitoringGroup60": [
+    "pingerisl-fjwu.pern.edu.pk"
+  ],
+  "MonitoringGroup61": [
+    "pingerisl-qau.pern.edu.pk"
+  ],
+  "MonitoringGroup62": [
+    "pingerjms.pern.edu.pk"
+  ],
+  "MonitoringGroup63": [
+    "pingerkhi-cpsp.pern.edu.pk"
+  ],
+  "MonitoringGroup64": [
+    "pingerkhi-uok.pern.edu.pk"
+  ],
+  "MonitoringGroup65": [
+    "pingerkhi.pern.edu.pk"
+  ],
+  "MonitoringGroup66": [
+    "pingerlhr-gcu.pern.edu.pk"
+  ],
+  "MonitoringGroup67": [
+    "pingerlhr-pu.pern.edu.pk"
+  ],
+  "MonitoringGroup68": [
+    "pingerlhr.pern.edu.pk"
+  ],
+  "MonitoringGroup69": [
+    "pingermtn.pern.edu.pk"
+  ],
+  "MonitoringGroup70": [
+    "pingerqta.pern.edu.pk"
+  ],
+  "MonitoringGroup71": [
+    "quest.seecs.edu.pk"
+  ],
+  "MonitoringGroup72": [
+    "rainbow.inp.nsk.su"
+  ],
+  "MonitoringGroup73": [
+    "sitka.triumf.ca"
+  ],
+  "MonitoringGroup74": [
+    "t2-monitor.ultralight.org"
+  ],
+  "MonitoringGroup75": [
+    "ultralog.ampath.net"
+  ],
+  "MonitoringGroup76": [
+    "v-www.ihep.ac.cn"
+  ],
+  "MonitoringGroup77": [
+    "web.hepgrid.uerj.br"
+  ],
+  "MonitoringGroup78": [
+    "www.umss.edu.bo"
+  ],
+  "MonitoringGroup79": [
+    "www.univ-ouaga.bf"
+  ],
+  "MonitoringGroup80": [
+    "www.upesh.edu.pk"
+  ]
+}
