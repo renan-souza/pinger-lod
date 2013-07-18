@@ -519,6 +519,7 @@
     "pingerlhr-gcu.pern.edu.pk",
     "pingerlhr-pu.pern.edu.pk",
     "pingerlhr.pern.edu.pk",
+    "pingerpwr.pern.edu.pk",
     "pingerqta.pern.edu.pk",
     "rainbow.inp.nsk.su",
     "sitka.triumf.ca",
@@ -645,7 +646,6 @@
     "www.fnal.gov",
     "www.gsi.de",
     "www.hep.anl.gov",
-    "www.hep.brown.edu",
     "www.hep.nd.edu",
     "www.hep.uiuc.edu",
     "www.ihep.su",
@@ -2127,7 +2127,6 @@
     "www.ntc.net.np",
     "www.ntc.net.pk",
     "www.online.tm",
-    "www.osaka-cu.ac.jp",
     "www.parlament.al",
     "www.pau.edu.kz",
     "www.phy.bris.ac.uk",
@@ -4635,6 +4634,7 @@
     "ping.rmki.kfki.hu",
     "pinger-itc.pu.edu.pk",
     "pinger-ncp.ncp.edu.pk",
+    "pinger-rcp.pern.edu.pk",
     "pinger.aiou.edu.pk",
     "pinger.cdacmumbai.in",
     "pinger.cemb.edu.pk",
@@ -4816,7 +4816,6 @@
   "pinger.pern.edu.pk": [
     "adl-a-ext1.aarnet.net.au",
     "airuniversity.seecs.edu.pk",
-    "amp-kiwi.cs.waikato.ac.nz",
     "aol1.albaniaonline.net",
     "aup.seecs.edu.pk",
     "ba.sanet.sk",
@@ -4930,8 +4929,7 @@
     "www.unitec.edu",
     "www.univ-sba.dz",
     "www.upesh.edu.pk",
-    "www.usep.edu.ph",
-    "www.weizmann.ac.il"
+    "www.usep.edu.ph"
   ],
   "pinger.sesame.org.jo": [
     "adl-a-ext1.aarnet.net.au",
@@ -5396,6 +5394,7 @@
     "www.cici.edu.kh",
     "www.cnaps.mg",
     "www.cnp.me",
+    "www.cnss.ga",
     "www.cob.edu.bs",
     "www.college.edu.sn",
     "www.corpozulia.gov.ve",
@@ -5446,7 +5445,6 @@
     "www.hellenic.ac.zw",
     "www.helwan.edu.eg",
     "www.hep.anl.gov",
-    "www.hep.brown.edu",
     "www.hep.uiuc.edu",
     "www.hepi.edu.ge",
     "www.hpu.edu",
@@ -6297,7 +6295,6 @@
   "pinger.uob.edu.pk": [
     "adl-a-ext1.aarnet.net.au",
     "airuniversity.seecs.edu.pk",
-    "amp-kiwi.cs.waikato.ac.nz",
     "aol1.albaniaonline.net",
     "aup.seecs.edu.pk",
     "ba.sanet.sk",
@@ -6372,6 +6369,7 @@
     "pingerlhr-gcu.pern.edu.pk",
     "pingerlhr-pu.pern.edu.pk",
     "pingerlhr.pern.edu.pk",
+    "pingerpwr.pern.edu.pk",
     "pingerqta.pern.edu.pk",
     "rainbow.inp.nsk.su",
     "sitka.triumf.ca",
@@ -6412,8 +6410,7 @@
     "www.unitec.edu",
     "www.univ-sba.dz",
     "www.upesh.edu.pk",
-    "www.usep.edu.ph",
-    "www.weizmann.ac.il"
+    "www.usep.edu.ph"
   ],
   "pinger.usindh.edu.pk": [
     "adl-a-ext1.aarnet.net.au",
@@ -6904,6 +6901,7 @@
     "pingerlhr-gcu.pern.edu.pk",
     "pingerlhr-pu.pern.edu.pk",
     "pingerlhr.pern.edu.pk",
+    "pingerpwr.pern.edu.pk",
     "pingerqta.pern.edu.pk",
     "rainbow.inp.nsk.su",
     "sitka.triumf.ca",
@@ -6950,7 +6948,6 @@
   "pingerisl-qau.pern.edu.pk": [
     "adl-a-ext1.aarnet.net.au",
     "airuniversity.seecs.edu.pk",
-    "amp-kiwi.cs.waikato.ac.nz",
     "aol1.albaniaonline.net",
     "aup.seecs.edu.pk",
     "ba.sanet.sk",
@@ -7024,6 +7021,7 @@
     "pingerlhr-gcu.pern.edu.pk",
     "pingerlhr-pu.pern.edu.pk",
     "pingerlhr.pern.edu.pk",
+    "pingerpwr.pern.edu.pk",
     "pingerqta.pern.edu.pk",
     "rainbow.inp.nsk.su",
     "sitka.triumf.ca",
@@ -7039,7 +7037,6 @@
     "www.camnet.cm",
     "www.carnet.hr",
     "www.college.edu.sn",
-    "www.csir.org.gh",
     "www.cuc.ac.cr",
     "www.cuc.edu.ve",
     "www.cut.edu.lb",
@@ -7064,13 +7061,11 @@
     "www.unitec.edu",
     "www.univ-sba.dz",
     "www.upesh.edu.pk",
-    "www.usep.edu.ph",
-    "www.weizmann.ac.il"
+    "www.usep.edu.ph"
   ],
   "pingerjms.pern.edu.pk": [
     "adl-a-ext1.aarnet.net.au",
     "airuniversity.seecs.edu.pk",
-    "amp-kiwi.cs.waikato.ac.nz",
     "aol1.albaniaonline.net",
     "aup.seecs.edu.pk",
     "ba.sanet.sk",
@@ -8289,7 +8284,6 @@
     "dns.sinica.edu.tw",
     "dxcnaf.cnaf.infn.it",
     "enterprise.phys.vt.edu",
-    "fnal.fnal.gov",
     "frcu.eun.eg",
     "ftp.physics.carleton.ca",
     "hephp1.ucsd.edu",
