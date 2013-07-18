@@ -18,7 +18,7 @@ public class SchoolInstantiator {
 	public static void start() {
 
 		int contSchools = 0;
-		JsonObject json = C.getJsonAsObject(C.JSON_NODES_FILE);
+		JsonObject json = C.getNodeDetails();
 		int total = json.entrySet().size();
 
 		for (Entry<String,JsonElement> entry : json.entrySet()) {

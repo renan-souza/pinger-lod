@@ -1,13 +1,14 @@
 package edu.stanford.slac.pinger.general;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Calendar;
 import java.util.HashSet;
+
+import org.apache.commons.io.IOUtils;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -18,7 +19,7 @@ import com.google.gson.JsonPrimitive;
 
 
 public final class C {
-	
+
 	/* *******************************************************
 	 * ************* Sesame Configuration ********************
 	 ********************************************************* */ 
@@ -31,15 +32,17 @@ public final class C {
 	 ********************************************************* */ 
 	//public static final String JSON_NODES_FILE = "json/NodesData2.json";
 	public static final String JSON_NODES_FILE = "data/json/NodesDataComplete.json";
-	public static final String MONITORING_MONITORED_JSON_FILE = "data/json/MonitoringMoniredNodes.json";
+	public static final String MONITORING_MONITORED_JSON_FILE = "data/json/MonitoringMonitoredNodes.json";
+	public static final String MONITORING_MONITORED_GROUPED_JSON_FILE = "data/json/MonitoringMonitoredNodesGrouped.json";
+	public static final String MONITORING_NODES_GROUPED = "data/json/MonitoringNodesGrouped.json";
 	public static final String COUNTRIES_JSON = "data/json/countries.json";
-	
+
 	/* *******************************************************
 	 * ***************** RDF Files **************************
 	 ********************************************************* */ 
 	public static final String PREFIXES_FILE = "data/rdf/prefixes.rdf";
-	
-	
+
+
 	/* *****************************************************************
 	 * ***************** Web Sparql Endpoints **************************
 	 ******************************************************************* */ 	
@@ -52,54 +55,75 @@ public final class C {
 
 
 	/* *******************************************************************
-	 * ************* Other General Public Constants *******************
+	 * ************* Other General Public MeasurementUtils *******************
 	 ******************************************************************* */ 	
 	public static final String PROJECT_HOME = System.getProperty("user.dir");
 	public static final String PERL_HOME = "C:\\strawberry\\perl\\bin";
 
 	public static final String STANDARD_SPARQLQUERY = "select * where { ?a ?b ?c } limit 10";
 	public static final int MAX_ATTEMPT_INSTANTIATOR = 5;
+	public static final int NUM_THREADS_MONITORING_NODES = 100;
+	public static final int NUM_THREADS_MONITORED_NODES = 50;
 
 	public static boolean CONTINUE_TOWN = true;
 	public static boolean CONTINUE_COUNTRY = true;
 
 
-	
-	
 	/* *******************************************************************
 	 * ************* General Functions ***********************************
 	 ******************************************************************* */ 
-	
+
+	private static JsonObject _MonitoringMonitoredGroupedJSON = null;
+	public static JsonObject getMonitoringMonitoredGroupedJSON() {
+		if (_MonitoringMonitoredGroupedJSON==null) {
+			System.out.println("Generating the MonitoringMonitoredGroupedJSON from JSON file...");
+			long t1 = System.currentTimeMillis();
+			_MonitoringMonitoredGroupedJSON = getJsonAsObject(MONITORING_MONITORED_GROUPED_JSON_FILE);
+			long t2 = System.currentTimeMillis();
+			System.out.println("...done! It took " + (t2-t1)/1000.0 + " seconds.");
+		} 
+		return _MonitoringMonitoredGroupedJSON;
+	}
+	public static void setMonitoringMonitoredGroupedJSON(JsonObject MonitoringMonitoredGroupedJSON) {
+		_MonitoringMonitoredGroupedJSON = MonitoringMonitoredGroupedJSON;
+	}
+
 	private static JsonObject NODE_DETAILS = null;
 	public static JsonObject getNodeDetails() {
 		if (NODE_DETAILS==null) {
+			System.out.println("Generating the HashMap NodeDetails from JSON file...");
+			long t1 = System.currentTimeMillis();
 			NODE_DETAILS = getJsonAsObject(JSON_NODES_FILE);
+			long t2 = System.currentTimeMillis();
+			System.out.println("...done! It took " + (t2-t1)/1000.0 + " seconds.");
 		} 
 		return NODE_DETAILS;
 	}
 
-	private static JsonElement getJsonElement(String jsonFilePath) {
-		BufferedReader br = null;		 
+	public static String readFile(String filePath) {
+		FileInputStream fis = null;
 		try {
-			String jsonStr = ""; 
-			String sCurrentLine;
-			br = new BufferedReader(new FileReader(jsonFilePath)); 
-			while ((sCurrentLine = br.readLine()) != null) {
-				jsonStr += sCurrentLine+"\n";
-			}		
-			return new JsonParser().parse(jsonStr);
-		} catch (IOException e) {
+			fis = new FileInputStream(filePath);
+			String everything = IOUtils.toString(fis);
+			return everything;
+		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		} finally {
 			try {
-				if (br != null)br.close();
-			} catch (IOException ex) {
-				ex.printStackTrace();
+				fis.close();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
 		}
 	}
 
+	private static JsonElement getJsonElement(String jsonFilePath) {
+		String content = readFile(jsonFilePath);
+		JsonElement el = new JsonParser().parse(content);
+		return el;
+	}
+	
 
 	public static JsonObject getJsonAsObject(String jsonFilePath) {
 		try {
@@ -211,6 +235,7 @@ public final class C {
 			String date = month+"/"+day+"/"+year + " " +hour+":"+min+":"+sec;
 			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(logFile, true)));
 			out.println(date + " -- " + msg);
+			System.out.println(date + " -- " + msg);
 			out.close();
 		} catch (IOException e) {
 			System.out.println(e);

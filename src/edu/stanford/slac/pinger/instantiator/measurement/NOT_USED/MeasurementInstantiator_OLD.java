@@ -1,4 +1,4 @@
-package edu.stanford.slac.pinger.instantiator.measurement;
+package edu.stanford.slac.pinger.instantiator.measurement.NOT_USED;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -17,7 +17,7 @@ import edu.stanford.slac.pinger.model.GeneralModelSingleton;
 import edu.stanford.slac.pinger.rest.pingtable.GetPingTableHostToHost;
 
 
-public class MeasurementInstantiator {
+public class MeasurementInstantiator_OLD {
 
 	private static void start(String metric, String packetSize, String tickParameter) {
 		JsonObject MonitoringMonitred;
@@ -259,7 +259,7 @@ public class MeasurementInstantiator {
 						start(metric, packetSize, tickParam);
 					} catch (Exception e) {
 						System.out.println(e);
-						C.log(MeasurementInstantiator.class + " " + e);
+						C.log(MeasurementInstantiator_OLD.class + " " + e);
 						continue;
 					}
 				}

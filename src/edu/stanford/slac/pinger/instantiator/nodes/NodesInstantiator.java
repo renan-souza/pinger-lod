@@ -15,7 +15,7 @@ public class NodesInstantiator {
 
 
 	public static void start() {
-		JsonObject json = C.getJsonAsObject(C.JSON_NODES_FILE);
+		JsonObject json = C.getNodeDetails();
 		if (json == null) {
 			C.log(NodesInstantiator.class + "Json Null");
 			return;
