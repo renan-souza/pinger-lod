@@ -52,7 +52,6 @@ public class GeneralModelSingleton {
 	private static final int TYPE_RDF = 2;
 	private static final int TYPE_JSON = 3;
 
-
 	protected GeneralModelSingleton() {
 	}
 	public static GeneralModelSingleton getInstance() {
@@ -83,7 +82,7 @@ public class GeneralModelSingleton {
 	}
 	public void begin() {
 		try {
-			con.begin();
+			//con.begin();
 			System.out.println("Connected to the repository.");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -91,7 +90,7 @@ public class GeneralModelSingleton {
 	}
 	public void commit() {
 		try {
-			con.commit();
+			//con.commit();
 			System.out.println("Transactions commited successfully.");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -110,7 +109,7 @@ public class GeneralModelSingleton {
 			else if (!propertyExists(subj, pred))
 				con.add(subj, pred, obj, ctxt);
 		} catch (Exception e) {
-			System.out.println(e);
+			C.log(e + "-----!!!!!!!!!!----- " + subj.toString() + " " + pred.toString() + " " + obj.toString());
 			e.printStackTrace();
 		}
 
@@ -191,7 +190,7 @@ public class GeneralModelSingleton {
 			else if (!propertyExists(subj, pred))
 				con.add(subj, pred, obj, ctxt);
 		} catch (Exception e) {
-			System.out.println(e);
+			C.log(e + "-----!!!!!!!!!!----- " + subj.toString() + " " + pred.toString() + " " + obj.toString());
 			e.printStackTrace();
 		}
 	}
@@ -257,6 +256,7 @@ public class GeneralModelSingleton {
 			if (outputType==TYPE_CVS) format = TupleQueryResultFormat.CSV;
 			else if (outputType==TYPE_JSON) format = TupleQueryResultFormat.JSON;
 			else if (outputType==TYPE_RDF) format = TupleQueryResultFormat.SPARQL;
+			
 			QueryResultIO.write(result, format, baos);
 			return baos.toString("UTF-8");
 		} catch (Exception e) {
@@ -274,7 +274,8 @@ public class GeneralModelSingleton {
 	public TupleQueryResult query(String sparqlQuery) {
 		TupleQueryResult result = null;
 		try {
-			TupleQuery tupleQuery = con.prepareTupleQuery(QueryLanguage.SPARQL, P.PREFIXES + sparqlQuery);
+			String prefixes = "PREFIX : <"+P.BASE+">\n"+P.PREFIXES;
+			TupleQuery tupleQuery = con.prepareTupleQuery(QueryLanguage.SPARQL, prefixes + sparqlQuery);
 			result = tupleQuery.evaluate();
 
 			return result;

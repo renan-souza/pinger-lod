@@ -2,6 +2,7 @@ package edu.stanford.slac.pinger.rest.pingtable;
 
 import java.util.HashMap;
 
+import edu.stanford.slac.pinger.general.C;
 import edu.stanford.slac.pinger.rest.HttpGetter;
 
 /**
@@ -11,7 +12,7 @@ import edu.stanford.slac.pinger.rest.HttpGetter;
  * @author Renan
  *
  */
-public class GetPingTableCSV {
+public class GetPingTableTSV {
 
 
 	/**
@@ -31,11 +32,14 @@ public class GetPingTableCSV {
 						"ex=none&only=all&dataset=hep&percentage=any&dnode=on&"+
 						tickParameter;
 		System.out.println(url);
-		long t1 = System.currentTimeMillis();
-		String htmlContent = getPingTableCSV(url);
-		long t2 = System.currentTimeMillis();
-		System.out.println("It took " + (t2-t1)/1000.0 + " seconds to GET CSV file." );
-		if (htmlContent==null) return null;
+		//long t1 = System.currentTimeMillis();
+		String htmlContent = getPingTableTSV(url);
+		//long t2 = System.currentTimeMillis();
+		//System.out.println("It took " + (t2-t1)/1000.0 + " seconds to GET CSV file." );
+		if (htmlContent==null) {
+			C.log("Error on getting the map..."+from + " " + metric + " " + pktSize + " " + tickParameter + "\n"+ "URL of the map Error: " + url);
+			return null;
+		}
 		
 		String []lines = htmlContent.split("\n");
 		String []head = lines[0].split("\\s");
@@ -71,8 +75,8 @@ public class GetPingTableCSV {
 			}
 			mapMetrics.put(line[remoteNodeIndex], timeValue);
 		}
-		t2 = System.currentTimeMillis();
-		System.out.println("It took " + (t2-t1)/1000.0 + " seconds to process the valid result from pingtable." );
+		//t2 = System.currentTimeMillis();
+		//System.out.println("It took " + (t2-t1)/1000.0 + " seconds to process the valid result from pingtable." );
 		return mapMetrics;
 	}
 
@@ -89,7 +93,7 @@ public class GetPingTableCSV {
 		}
 	}
 
-	private static String getPingTableCSV(String URL) {
+	private static String getPingTableTSV(String URL) {
 		String s = HttpGetter.readPage(URL);
 		if (s.contains("<h1>Sorry</h1>")) return null;
 		return s;
